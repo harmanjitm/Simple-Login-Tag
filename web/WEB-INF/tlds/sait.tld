@@ -3,8 +3,9 @@
   <tlib-version>1.0</tlib-version>
   <short-name>sait</short-name>
   <uri>/WEB-INF/tlds/sait</uri>
-  <tag-file>
-    <name>login</name>
-    <path>/WEB-INF/tags/login.tag</path>
-  </tag-file>
+  <tag>
+    <name>debug</name>
+    <tag-class>tags.DebugTag</tag-class>
+    <body-content>JSP</body-content>
+  </tag>
 </taglib>

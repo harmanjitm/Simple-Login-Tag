@@ -9,10 +9,16 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <%@taglib prefix="sait" tagdir="/WEB-INF/tags/" %>
+        <%@taglib prefix="loginTag" tagdir="/WEB-INF/tags/"%>
+        <%@taglib prefix="sait" uri="/WEB-INF/tlds/sait.tld"%>
+        
         <title>Login</title>
     </head>
     <body>
-        <sait:login action="login" method="post"></sait:login>
+        <sait:debug>
+	Remote Host: ${pageContext.request.remoteHost}<br />
+	Session ID: ${pageContext.session.id}
+        </sait:debug>
+        <loginTag:login action="login" method="post"></loginTag:login>
     </body>
 </html>
